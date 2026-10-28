@@ -134,8 +134,8 @@ git clone https://github.com/dualface/ste-zh.git ~/.claude/skills/ste
 ## 设计背景与 ASD-STE100 的关系
 
 - **关于标准**：[ASD-STE100](https://www.asd-ste100.org/)（Simplified Technical English）由欧洲航空航天与国防工业协会（ASD）维护，原本是针对英文技术维护文档制定的受控语言规范，用于消除歧义与理解偏差。
-- **中文改写**：本项目提炼了 ASD-STE100 的核心原则，并结合 AI 交互特点重构为一套中文实用规则体系。条目编号与内容均为独立设计，并非原文直译。
-- **独立声明**：本项目为个人开源项目，未收录 ASD-STE100 原文与受控词典，与 ASD 组织无隶属关系。ASD-STE100 与 Simplified Technical English 的权利属于 ASD。如需研读 ASD-STE100 英文原版标准，可在其官网免费申请。
+- **中文改写**：本项目提炼了“Simplified Technical English”的原则，结合“修改任务”汇报特点，重构为一套中文规则、标准。条目编号、内容为独立设计，并非原文直译。
+- **独立声明**：本项目未收录“Simplified Technical English”原文与受控词典。个人开源项目，与ASD无隶属关系。ASD-STE100 与 “Simplified Technical English” 的权利属于 ASD。如需“Simplified Technical English”原标准，可在其官网免费申请。
 
 ---
 
@@ -143,16 +143,14 @@ git clone https://github.com/dualface/ste-zh.git ~/.claude/skills/ste
 
 | 路径                        | 说明                                                                              |
 | --------------------------- | --------------------------------------------------------------------------------- |
-| `SKILL.md`                  | skill 入口：生效机制、适用范围、25 条核心规则、5 种标准化输出模板及自检清单       |
+| `SKILL.md`                  | 技能入口：生效机制、适用范围、25 条核心规则、5 种标准化输出模板及自检清单       |
 | `references/terminology.md` | 概念字典：ASD-STE100 关键词译法、受控情态词、虚化动词替换表、固定状态词与标点规范 |
 | `examples/result-report.md` | 单任务结果汇报改写示例（改写前后对比）                                            |
 | `examples/task-summary.md`  | 多任务与迭代需求总结改写示例（改写前后对比）                                      |
 
 ---
 
-## 许可证
-
-基于 MIT 协议开源。详见 [LICENSE](LICENSE)。
+## 基于 MIT 协议开源。见 [LICENSE](LICENSE)。
 
 ---
 
