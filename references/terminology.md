@@ -1,8 +1,8 @@
 # 概念与固定译法
 
-本文件规定 ste-zh 使用的全部关键词。使用本 skill 时，必须按本表翻译和用词。表中没有的词，按 R1 在输出的「概念」节中自行固定。
+本文规定 ste-zh 使用的全部概念。使用本技能时，必须按本表翻译和用词。表中没有的概念，按 R1 在输出的「概念」节中自行固定。
 
-## 1. ASD-STE100 关键词的中文译法
+## 1. ASD-STE100 概念的中文译法
 
 讨论 ASD-STE100 本身，或向读者解释规则来源时，使用以下译法。首次出现时写「中文（英文）」，之后只写中文。
 
@@ -12,7 +12,7 @@
 |---|---|---|
 | ASD-STE100 | ASD-STE100 | 标准编号，不翻译。 |
 | Simplified Technical English (STE) | 简化技术英语 | 缩写 STE 不翻译。 |
-| Simplified Technical Chinese | 简化技术中文 | 本 skill 对中文改写版的称呼，不是官方名称。 |
+| Simplified Technical Chinese | 简化技术中文 | 本技能对中文改写版的称呼，不是官方名称。 |
 | ASD (AeroSpace, Security and Defence Industries Association of Europe) | 欧洲航空航天、安全与防务工业协会 | 一般只写 ASD。 |
 | STEMG (STE Maintenance Group) | STE 维护组 | |
 | Issue | 版 | 例：Issue 9 写作「第 9 版」。 |
@@ -31,8 +31,8 @@
 | alternative | 替代词 | |
 | part of speech | 词性 | |
 | approved meaning | 核准词义 | 一个核准词只有一个核准词义。 |
-| technical noun | 技术名词 | 第 9 版起取代 technical name。 |
-| technical name | 技术名称 | 第 8 版及更早版本的叫法。 |
+| technical noun | 技术概念 | 第 9 版起取代 technical name。 |
+| technical name | 技术概念 | 第 8 版及更早版本的叫法。 |
 | technical verb | 技术动词 | |
 | subject field | 学科领域 | |
 | company-specific / project-specific | 公司专用 / 项目专用 | 指公司或项目自行补充的词。 |
@@ -41,18 +41,18 @@
 
 | 英文 | 中文 | 说明 |
 |---|---|---|
-| noun cluster | 名词串 | |
+| noun cluster | 名词组合 | |
 | procedure / procedural writing | 步骤 / 步骤性写作 | 不译作「程序」，避免与软件程序混淆。 |
 | descriptive writing | 描述性写作 | |
 | instruction | 指令 | 指读者必须做的一个动作。 |
 | sentence | 句 | |
 | paragraph | 段 | |
-| topic | 主题 | |
+| topic | 题目 | |
 | active voice | 主动语态 | |
 | passive voice | 被动语态 | |
 | imperative (command form) | 祈使句 | |
 | simple tense | 简单时态 | 中文没有对应语法，只在解释英文规则时使用。 |
-| vertical list | 竖排列表 | |
+| vertical list | 竖排清单 | |
 | word count | 字数 | 中文计数方法见 SKILL.md R7。 |
 | safety instruction | 安全说明 | |
 | warning | 警告 | 有人身伤害风险。 |
@@ -127,7 +127,7 @@
 
 | 用词 | 用途 | 不得替换为 |
 |---|---|---|
-| 概念 | 定义专用词的节 | 名词解释、词汇表、定义 |
+| 概念 | 定义专用概念的节 | 概念解释、词汇表、定义 |
 | 共同条件 | 所有项都适用的事实或约束 | 前提、背景、通用约束 |
 | 问题 | 一项工作的现状 | 现状、缺陷描述、痛点 |
 | 要做 | 一项工作必须达到的可检查结果 | 方案、措施、修复内容、TODO |
