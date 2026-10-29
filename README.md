@@ -1,20 +1,18 @@
-# ste-zh：简化技术中文规范
+# ste-zh：中文规范
 
 **语言 / Language：** 简体中文 | [繁體中文](https://github.com/dualface/ste-zht)
 
-一个面向 AI Agent 的任务汇报规范 skill。借鉴航空与工业界严谨的 **ASD-STE100**（Simplified Technical English，简化技术英语）原则，约束 Agent 用清晰、严密且无歧义的中文汇报工作结果。
+面向Agent 的（任务）汇报规范（skill）。借鉴航空与工业界**ASD-STE100**（Simplified Technical English，简化技术英语）原则，约束 Agent 用清晰、严密且无歧义的（中文）汇报工作（结果）。
 
-Agent 的日常汇报常常过程冗长、推测含糊，或者漏掉关键的验证证据。开启 `ste-zh` 后，Agent 将遵循受控中文规范进行汇报：**关键信息先行、实证说话、状态固定、一目了然**。
+Agent 将按规范汇报：**关键信息先行、实证说话、状态固定、一目了然**。
 
-> 💡 本 skill 仅规范 Agent 向用户汇报与讨论时的表达方式，绝不影响项目代码、注释、Commit 信息及生成的文件内容。
+>   不影响代码、注释、版本提交信息、生成的文件内容。
 
 ---
 
 ## 为什么需要 ste-zh？
 
-同一个 Bug 修复任务，常见汇报与规范化汇报的差异如下。以下摘录以 [结果汇报示例](examples/result-report.md) 为准，示例中的来源事实见该文件。
-
-**常见 AI 汇报（冗长、推测、不报实证）：**
+Bug 修复任务**常见 AI 汇报（冗长、推测、不报实证）：**
 
 > 「好的，我先看了一下登录相关的代码，发现问题应该是出在 token 刷新的逻辑上，大概是并发的时候两个请求同时去刷新导致的。然后我对 `auth/refresh.ts` 进行了修改，加了一个锁来实现串行化处理，另外顺手把一些日志之类的也优化了一下。测试基本都跑过了，应该没什么问题，不过 iOS 那边因为没有环境暂时没法验证。你看要不要我再把重试逻辑也一起改了？」
 
@@ -41,8 +39,8 @@ Agent 的日常汇报常常过程冗长、推测含糊，或者漏掉关键的�
 > **待确认**
 >
 > - 是否保留 `auth/logger.ts` 的改动：
->   1. 撤回（推荐）— 本次提交只含登录修复。
->   2. 保留 — 日志清理和登录修复一起提交。
+>   撤回（推荐）— 本次提交只含登录修复。
+>   保留 — 日志清理和登录修复一起提交。
 
 ---
 
@@ -131,9 +129,9 @@ git clone https://github.com/dualface/ste-zh.git ~/.claude/skills/ste
 
 ---
 
-## 设计背景与 ASD-STE100 的关系
+## 设计背景与“Simplified Technical English”的关系
 
-- **关于标准**：[ASD-STE100](https://www.asd-ste100.org/)（Simplified Technical English）由欧洲航空航天与国防工业协会（ASD）维护，原本是针对英文技术维护文档制定的受控语言规范，用于消除歧义与理解偏差。
+-   “Simplified Technical English”（[ASD-STE100](https://www.asd-ste100.org/)）是针对技术维护文档制定的受控语言规范，用于消除歧义与理解偏差。由欧洲航空航天与国防工业协会（ASD）维护。
 - **中文改写**：本项目提炼了“Simplified Technical English”的原则，结合“修改任务”汇报特点，重构为一套中文规则、标准。条目编号、内容为独立设计，并非原文直译。
 - **独立声明**：本项目未收录“Simplified Technical English”原文与受控词典。个人开源项目，与ASD无隶属关系。ASD-STE100 与 “Simplified Technical English” 的权利属于 ASD。如需“Simplified Technical English”原标准，可在其官网免费申请。
 
